@@ -1,0 +1,125 @@
+﻿/*media queries for index.html and restaurant.html*/
+@media screen and (max-width: 770px) {
+    #restaurants-list li {
+        display: grid;
+        grid-template-areas: "title title" 
+                             "picture neighborhood" 
+                             "picture address"
+                             "picture btn";
+        grid-column-gap: 10px;
+        width: 90%;
+        min-height: 180px;
+
+    }
+    #restaurants-list .restaurant-img {
+        grid-area: picture;
+        display: block;
+        max-width: 90%;
+        min-width: 180px;
+        min-height: 0;
+    }
+    .restaurant-titles {
+        grid-area: title;
+    }
+    .restaurant-neighborhood {
+        grid-area: neighborhood;
+    }
+    .restaurant-address {
+        font-size: 20px;
+        grid-area: address;
+    }
+    .view-details {
+        grid-area: btn;
+        padding-top: 25px;
+        height: 40px;
+        max-width: 95px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #filter-options select {
+        width: 150px;
+        margin: 0 5px;
+    }
+
+    #filter-label {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    #filter-options {
+        height: 63px;
+        padding-top: 5px;
+    }
+    #footer {
+        font-size: 6pt;
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #restaurant-info {
+        text-align: left;
+        margin: 0;
+    }
+
+    #restaurant-cuisine {
+        text-align: center;
+    }
+
+    #restaurant-hours {
+        margin: 0;
+    }
+
+    #map-container {
+        margin: auto;
+        width: 97%;
+    }
+
+    #breadcrumb {
+        padding: 10px 40px 10px;
+        font-size: 4vw;
+        letter-spacing: 0;
+    }
+
+    #restaurant-info #restaurant-img {
+        width: 70%;
+        min-width: 250px;
+    }
+
+    #restaurant-cuisine {
+        max-width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 455px) {
+    header {
+        padding-top: 5px;
+    }
+    #title {
+        font-size: 5vw;
+        letter-spacing: 6px;
+    }
+}
+
+@media screen and (max-width: 421px){
+    header {
+        text-align:left;
+        padding-left: 12px;
+    }
+    #filter-options {
+      text-align: left;
+    }
+
+    #breadcrumb {
+        padding: 10px 20px 16px;
+    }
+
+    #restaurants-list li {
+        grid-template-areas: "title title" "picture neighborhood" "picture address" "btn btn";
+    }
+}
+

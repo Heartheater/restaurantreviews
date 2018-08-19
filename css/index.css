@@ -1,0 +1,108 @@
+﻿/* CSS for index.html*/
+
+#main-content-container {
+    grid-template-areas: "map" "restaurants";
+}
+
+
+/* ====================== Map ====================== */
+
+#map-container {
+    height: 35vw;
+    max-height: 400px;
+    min-height: 300px;
+}
+
+/* ====================== Restaurant Filtering ====================== */
+#filter-options {
+    width: 100%;
+    height: 50px;
+    background-color: #3397db;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#filter-label {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 20px;
+}
+
+#filter-options select {
+    background-color: white;
+    border: none;
+    font-size: 11pt;
+    height: 35px;
+    padding: 0 10px;
+    width: 200px;
+    margin: 0 2%;
+}
+
+
+/* ====================== Restaurant Listing ====================== */
+
+#restaurant-container {
+    grid-area: restaurants;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+#restaurants-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: outside none none;
+    justify-content: center;
+}
+
+#restaurants-list li {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  margin: 15px;
+  min-height: 380px;
+  padding: 0 30px 25px;
+  text-align: left;
+  width: 270px;
+}
+.restaurant-neighborhood {
+    font-weight: bold;
+}
+
+#restaurants-list .restaurant-img {
+  background-color: #ccc;
+  display: block;
+  margin: 0;
+  min-height: 248px;
+  width: 100%;
+}
+
+.restaurant-titles {
+  color: #f18200;
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+
+#restaurants-list p {
+  margin: 0;
+  font-size: 11pt;
+}
+
+.view-details {
+  background-color: orange;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  display: inline-block;
+  font-size: 10pt;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
