@@ -1,8 +1,9 @@
 let currentCache = 'restaurant-reviews-v1';
 const mapboxToken = 'pk.eyJ1Ijoic25vd3dvbGYzNSIsImEiOiJjamt1ZDhnanYwNXd0M2tycmx0NmY4NGRiIn0.4Y9hG-a0faSdafIauJCXVw';
-/*
+
 let cachedFiles = [
     './',
+    'index.html',
     'restaurant.html',
     'js/restaurant_info.js',
     'js/main.js',
@@ -25,7 +26,7 @@ let cachedFiles = [
     'restaurant-favicon.ico',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
-    //maptiles around the restaurants area
+    //map tiles around the restaurants area
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1206/1539.jpg70?access_token=${mapboxToken}`,
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1206/1540.jpg70?access_token=${mapboxToken}`,
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1205/1539.jpg70?access_token=${mapboxToken}`,
@@ -34,7 +35,8 @@ let cachedFiles = [
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1207/1540.jpg70?access_token=${mapboxToken}`,
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1204/1539.jpg70?access_token=${mapboxToken}`,
     `https://api.tiles.mapbox.com/v4/mapbox.streets/12/1204/1540.jpg70?access_token=${mapboxToken}`,
-
+    //marker icon
+    'https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon-2x.png',
 
 ];
 
@@ -96,4 +98,3 @@ self.addEventListener('fetch', (e) => {
     );
 });
 
-*/
